@@ -46,4 +46,4 @@ jobs:
           echo "Triggering deployment on Render..."
           curl -X POST "https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys" \
             -H "Accept: application/json" \
-            -H "Authorization: Bearer ${{ secrets.Render_Api_Key }}"
+            -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}"
